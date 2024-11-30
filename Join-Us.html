@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+     <title> Gaming Community</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="Joinus.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gaming Community </h1>
+        </header>
+        <nav>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+        <div class="list">
+<p> <a href="home(edited).html">Home</a></p>
+<p> <a class="Rules" href="">Rules&Register</a> </P> 
+<p> <a href="About us.html">About us</a></p>
+</div>
+</nav>
+<article>
+    <h2 title="This is the Rules of The server">Rules</h2>
+    <section>
+        <H3>General Rules</H3>
+        <ul>
+        <li>Do Not Cheating!</li>
+        <li>Using any modifey mods is consedered as cheating</li>
+        <li>Don`t Talking about Religions </li>
+        <li>Don't be racist against any person or group</li>
+        <li>Violation of any of these rules will result in a ban.</li>
+    </ul>
+    </section>
+    <section>
+        <h3>Tournament Rules</h3>
+        <ul>
+            <li>Smurfing is not allowed(Playing with or against low levels players)</li>
+            <li>Don`t contact with any of the Tournament spectators during matches</li>
+            <li>Don't cry or complain about the referee when you lose. Be respectful</li>
+        </ul>
+    </section>
+    <h2 class="History">Tournaments History</h2>
+    <table>
+        <thead>
+          <tr>
+            <th>Place</th>
+            <th>Tournament</th>
+            <th>Type</th>
+            <th>Winner</th>
+            <th>Reward</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="placefirst">1st</td>
+            <td>RocketLeague tier-B</td>
+            <td class="wheat">3v3</td>
+            <td>Team bsee6</td>
+            <td class="wheat">$750</td>
+          </tr>
+          <tr>
+            <td class="placesec">2nd</td>
+            <td>RocketLeague tier-B</td>
+            <td class="wheat">3v3</td>
+            <td>Team Dooge Srt</td>
+            <td class="wheat">$250</td>
+          </tr>
+          <tr>
+            <td class="placefirst">1st</td>
+            <td>ModrenWarfare DCC League</td>
+            <td class="wheat">1v1</td>
+            <td>Group 6</td>
+            <td class="wheat">$2500</td>
+          </tr>
+          <tr>
+            <td class="placesec">2nd</td>
+            <td>ModrenWarfare DCC League</td>
+            <td class="wheat">1v1</td>
+            <td>Group 3</td>
+            <td class="wheat">$500</td>
+          </tr>
+    
+          <tr class="hidden-row">
+            <td class="placefirst">1st</td>
+            <td>Overwatch online major</td>
+            <td class="wheat">5v5</td>
+            <td>Team Crazy</td>
+            <td class="wheat">$250</td>
+          </tr>
+          <tr class="hidden-row">
+            <td class="placesec">2nd</td>
+            <td>Overwatch online major</td>
+            <td class="wheat">5v5</td>
+            <td>Team SASA Salt</td>
+            <td class="wheat">$0</td>
+          </tr>
+          <tr class="hidden-row">
+            <td class="placefirst">1st</td>
+            <td>RocketLeague Main-event</td>
+            <td class="wheat">2v2</td>
+            <td>Team DCC</td>
+            <td class="wheat">$1500</td>
+          </tr>
+          <tr class="hidden-row">
+            <td class="placesec">2nd</td>
+            <td>RocketLeague Main-event</td>
+            <td class="wheat">2v2</td>
+            <td>Team KFUPM</td>
+            <td class="wheat">$750</td>
+          </tr>
+          <tr class="hidden-row">
+            <td class="losers">3th</td>
+            <td>RocketLeague Main-event</td>
+            <td class="wheat">2v2</td>
+            <td> G.O.A.T</td>
+            <td class="wheat">$300</td>
+          </tr>
+          <tr class="hidden-row">
+            <td class="losers">4th</td>
+            <td>RocketLeague Main-event</td>
+            <td class="wheat">2v2</td>
+            <td>Albaik</td>
+            <td class="wheat">$150</td>
+          </tr>
+          <tr class="hidden-row">
+            <td class="placefirst">1st</td>
+            <td>Fortnite Trios</td>
+            <td class="wheat">3v3</td>
+            <td>CR7</td>
+            <td class="wheat">$100</td>
+          </tr>
+          <tr class="hidden-row">
+            <td class="placesec">2nd</td>
+            <td>Fortnite Trios</td>
+            <td class="wheat">3v3</td>
+            <td>Messi</td>
+            <td class="wheat">$0</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="display-arrow" onclick="toggleRows()">▼ View Last Tournaments</div>
+      <section>
+      <h2>Manage Tournaments</h2>
+      <ul>
+      <li>If you want to manage your private or public Tournament please contact with us.</li>
+      <li><b><a href="">gaming.community.dcc@gmail.com</a> </b></li>
+      </ul>
+      </section>
+<nav class="register">
+    <p><a href="register.html">Join Us</a></p>
+</nav>
+
+    </article>
+<aside></aside>
+<footer>
+    <p> © Gaming Community 2024</p>
+</footer>
+<script>
+        let isExpanded = false;
+
+    function toggleRows() {
+      const rows = document.querySelectorAll('.hidden-row');
+      rows.forEach(row => {
+        row.style.display = isExpanded ? 'none' : 'table-row';
+      });
+      const arrow = document.querySelector('.display-arrow');
+      arrow.textContent = isExpanded ? '▼ View Last 20 Tournaments' : '▲ Hide Tournaments';
+      isExpanded = !isExpanded;
+    }
+</script>   
+</div>
+</body>
+</html>

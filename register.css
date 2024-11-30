@@ -1,0 +1,134 @@
+.container{max-width: 400px;
+    margin:auto;
+    backdrop-filter: blur(20px);
+    padding-bottom:50px;
+    margin-top:2in;
+    text-align: center;
+}
+body{
+background: url("ProImages/body\ \(1\).jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.input{margin:10px 0 10px; }
+#Name:valid,#password:valid,#email:valid,figure:valid{border-color: lightgreen;}
+
+#Name,#password,#email{
+font-size: 25px;
+background:transparent;
+border-color:3px solid lightblue;
+text-align: left;
+border-radius: 25px;
+padding: 10px 0 10px;
+color:lightblue;
+transition: border-color 0.3s;
+}
+
+#Name::placeholder,#email::placeholder,#password::placeholder{
+color:lightblue; padding-left:20px;
+}
+#Name:focus,#password:focus,#email:focus{
+outline: none; 
+border-color: #007bff;
+}
+
+h1{  font-family: 'Courier New', Courier, monospace;
+ color:lightblue;
+ text-shadow:
+   0px 0px 10px aqua,
+   0px 0px 20px blue,
+   0px 0px 40px aqua,
+   0px 0px 80px lightblue;
+  text-align: center;
+   padding:10px;
+   font-size: 40px;
+}
+
+#submit{
+font-size: 30px;
+border-radius: 15px;
+background: transparent;
+border-color:3px solid lightblue;
+color:lightblue;
+transition: border-color 0.3s;
+
+}
+.checktext{color:lightblue}
+@keyframes img-size {
+0% {
+width:64px; height: 64px;  }
+50% {
+    width:74px; height: 72px;  }
+    100% {
+        width:80px; height:80px;
+    }
+}
+@keyframes borderLoop {
+0% {
+border-color: lightblue;
+}
+50% {
+border-color: #007bff;
+}
+100% {
+border-color: aqua;
+}
+}
+#Name,#email,#password,#submit,fieldset{
+animation: borderLoop 5s infinite ;
+}
+#submit{
+cursor: pointer;
+}
+#Name:focus,#email:focus,#password:focus,{
+animation: borderLoop infinite linear infinite; 
+}
+.icons figure{
+display:inline-block;
+border-radius: 15px;
+}
+.icons{width:100%;}
+.icons figure img{
+background:lightblue;
+border:2px solid blue; 
+border-radius: 15px;
+padding:0 9px;   
+color:white;
+box-shadow:
+   0px 0px 10px midnightblue,
+   0px 0px 20px midnightblue,
+   0px 0px 40px midnightblue,
+   0px 0px 80px midnightblue;
+   width: 64px;
+   height: 64px; 
+}
+.figcaption{
+    border:2px solid lightgreen;
+    padding:10px;
+}
+.icons img:hover{border:3px solid green;
+     cursor: pointer;
+    }
+    
+#warfare,#fort,#league,#over{display:none;}
+legend{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:lightblue;
+    font-size: 20px;
+}
+figcaption{
+    color:lightblue;
+    font-family: fantasy ;
+}
+#warfare{background-image: url("project image/Modren.png");}
+.image-radio:checked + label > .image {
+border-color: lightgreen;
+width: 80px;
+height: 80px;
+animation-name:img-size;
+animation-duration: 3s;
+}
+fieldset{
+border-radius: 15px;
+}
