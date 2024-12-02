@@ -42,16 +42,15 @@
         white;color:rgb(0, 0, 83);
     }
     article{
-        padding-bottom:auto;
+
         padding-top:10px;
-        repeat:no-repeat;
+
         background: lightcyan;
         padding-bottom: 15px;
     }
 header{
     background: lightcyan;
-    repeat:no-repeat;
-    background-size:cover;
+
 }
 footer{
     background:rgb(0, 0, 83);
@@ -71,7 +70,7 @@ th,td{
 body{
 background: url("ProImages/body\ \(1\).jpg");
 background-size: cover;
-background-repeat: no-repeat;
+
 }
 label{
     display:none;
@@ -149,10 +148,11 @@ color:white;
     margin-left:auto;
     text-align: center;
 }
-.register a:visited{s
-    color:white;
+.register:hover{
+background:lightblue;
 
 }
+
 h2{
     color:red;
 }
