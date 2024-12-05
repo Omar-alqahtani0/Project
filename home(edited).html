@@ -26,10 +26,10 @@
             </p>
             
             <div class="cta">
-                <button onclick="location.href='Rules&Register.html'">Join Now</button>
-                <button onclick="location.href='Games.html'">Explore Games</button>
+                <button id="location1">Join Now</button>
+                <button id="location2">Explore Games</button>
             </div>
-
+  
             <section class="features">
                 <h3>Why Join Us?</h3>
                 <ul>
@@ -44,10 +44,35 @@
                 <p>🎮 Upcoming Event:rocket league Tournament with 2000$ winning prize - Register now!</p>
                 <p>📰 Latest News: valorant got added to the library this week.</p>
             </section>
+<section id="explore">
+                <h3 id="target">Games</h3>
+                <ul>
+                    <li>ModrenWarfare</li>
+                    <li>RocketLeague</li>
+                    <li>Fortnite</li>
+                    <li>Overwatch</li>
+                    <li>Valorant</li>
+                    <li>Pubg(Coming Soon!)</li>
+                    <li>EAFC25(Coming Soon!)</li>
+                </ul>
+            </section>
         </article>
         <footer>
             <p>© Gaming Community 2024</p>
         </footer>
+<script>
+ document.getElementById('location1').addEventListener('click', () => {
+      window.location.href = "Join-Us.html";
+    });
+
+document.getElementById("location2").addEventListener('click', () => {
+      const target = document.getElementById("target");
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(() => {
+        target.focus();
+      }, 500); 
+    });
+</script>
     </div>
 </body>
 </html>
