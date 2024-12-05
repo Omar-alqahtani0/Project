@@ -29,7 +29,12 @@ background-repeat: no-repeat;
             background: white;
             color: rgb(0, 0, 83);
         }
-
+        h2{
+            color:Red;
+        }
+       h3{
+        color:darkblue
+       }
         article {
             padding: 20px;
             background-color: lightcyan;
