@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+<link rel="shortcut icon" href="ProImages/web-icon.png">
+<link rel="apple-touch-icon" href="ProImages/web-icon.png">
+<link rel="android" href="ProImages/web-icon.png">
     <style>
         .container{max-width: 600px;
         margin:auto;
@@ -53,13 +56,22 @@ p{
         <header>
         <H1>Information</H1>
         </header>
-             <article>
-                <script></script>
-             </article>
+                <div id="output"></div>
+
+                <script>
+                    const urlParams = new URLSearchParams(window.location.search);
+                    let outputHtml = '<ul>';
+                    for (const [key, value] of urlParams.entries()) {
+                        outputHtml += `<li><h3 style="color:lightblue;">${key}:</h3> <strong> <h3 style="color:white;">${decodeURIComponent(value)}</h3></strong></li>`;
+                    }
+                    outputHtml += '</ul>';
+            
+                    document.getElementById('output').innerHTML = outputHtml;
+                </script>
     <footer>
-        <p>If you want to back to the register page please click:<a href="register.html"class="back"> &#8592;back</a></p>
+        <p>Please check your information above. If there are any mistake click:<a href="register.html"class="back"> &#8592;back</a></p>
         <figure>
-        <p><a href="https://discord.gg/SpnBb4JK"><img src="ProImages/Discord.png" height="128" width="128" id="fig"></a></p>
+        <p><a href="https://discord.gg/MRuu57Hqx6"><img src="ProImages/Discord.png" height="128" width="128" id="fig"></a></p>
 <figcaption><Label for="fig">Click to join the server</Label></figcaption>
     </figure>
     </footer>
